@@ -2,6 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Procurement_AzureCodeProject_Weather", "Procurement_AzureCodeProject_Weather\Procurement_AzureCodeProject_Weather.csproj", "{65C070D4-D750-4F13-9E46-3B7B8AF269C0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{1E3BBCC1-4F11-4CAB-A8F2-1A601A466881}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\azure-functions-app-dotnet.yml = ..\.github\workflows\azure-functions-app-dotnet.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
