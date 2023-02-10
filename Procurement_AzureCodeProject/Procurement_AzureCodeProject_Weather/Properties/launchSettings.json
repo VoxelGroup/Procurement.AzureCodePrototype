@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Procurement_AzureCodeProject_Weather": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7149",
+      "launchBrowser": false
+    }
+  }
+}
