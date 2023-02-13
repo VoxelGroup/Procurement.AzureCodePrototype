@@ -20,4 +20,4 @@
    inputs:
      repository: '$(imageName)'
      command: 'save'
-     arguments: "--output $(Build.ArtifactStagingDirectory)/${{ parameters.dockerImgName }}.image.tar ${{ parameters.dockerImgName }}:${{ parameters.dockerImageTag }}"
+     arguments: "--output $(Build.ArtifactStagingDirectory)/$(imageName).image.tar $(imageName):$(imageName)"
