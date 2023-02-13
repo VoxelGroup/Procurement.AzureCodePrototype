@@ -14,4 +14,10 @@
      repository: '$(imageName)'
      command: 'build'
      Dockerfile: 'Procurement_AzureCodeProject/Procurement_AzureCodeProject_Weather/Dockerfile'
-     buildContext: 'Procurement_AzureCodeProject'
+     buildContext: 'Procurement_AzureCodeProject'     
+ - task: Docker@2
+   displayName: Save image as a .tar
+   inputs:
+     repository: '$(imageName)'
+     command: 'save'
+     arguments: "--output $(Build.ArtifactStagingDirectory)/${{ parameters.dockerImgName }}.image.tar ${{ parameters.dockerImgName }}:${{ parameters.dockerImageTag }}"
