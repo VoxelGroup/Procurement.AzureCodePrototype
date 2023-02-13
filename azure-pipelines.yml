@@ -13,4 +13,4 @@
    inputs:
      repository: $(imageName)
      command: build
-     Dockerfile: app/Dockerfile
+     Dockerfile: Procurement_AzureCodeProject/Procurement_AzureCodeProject_Weather/Dockerfile
