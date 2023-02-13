@@ -51,7 +51,7 @@ jobs:
   condition: and(succeeded(), eq(variables['Azure.CreateResources'], 'true'))
 
   pool:
-    {{ pool }}
+    vmImage: 'ubuntu-latest'
 
   steps:
   - task: AzureResourceGroupDeployment@2
