@@ -11,6 +11,7 @@
  - task: Docker@2
    displayName: Build an image
    inputs:
-     repository: $(imageName)
-     command: build
-     Dockerfile: Procurement_AzureCodeProject/Procurement_AzureCodeProject_Weather/Dockerfile
+     repository: '$(imageName)'
+     command: 'build'
+     Dockerfile: 'Procurement_AzureCodeProject/Procurement_AzureCodeProject_Weather/Dockerfile'
+     buildContext: 'Procurement_AzureCodeProject'
